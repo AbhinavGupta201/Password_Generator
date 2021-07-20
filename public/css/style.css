@@ -1,0 +1,101 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color: black;
+  }
+  body {
+    background-color: bisque;
+  }
+  #heading_title {
+    text-align: center;
+    margin: 0px;
+    border-bottom: 1px solid black;
+    font-family: "Times New Roman", Times, serif;
+    padding: 20px;
+    color: rgb(111, 100, 206);
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  #myform {
+    padding: 50px 20px;
+    background-color: aqua;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  
+    border-radius: 20px;
+  }
+  
+  #numeric_yes {
+    margin-left: 90px;
+  }
+  #special_yes {
+    margin-left: 15px;
+  }
+  #length {
+    margin-left: 20px;
+  }
+  .options {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .form {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  
+  }
+  #submitBtn,
+  #resetBtn {
+    background-color: green;
+    color: white;
+    border: 1px solid red;
+    padding: 4px 10px;
+    font-size: 18px;
+  }
+  #Password_List{
+      align-items: center;
+      margin: 70px auto;
+  }
+  @media (max-width: 465px) {
+      #myform {
+          padding: 10px 0px;
+  
+        }
+        .form {
+          margin: 10px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          flex-wrap: wrap;
+        
+        }
+        #length {
+          margin-top: 10px;
+          margin-left: 0px;
+        }
+        .form ,.length{
+          margin: 10px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          flex-wrap: wrap;
+        
+        }
+     
+  }
+  
+  

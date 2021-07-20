@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password-Generator</title>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1 id="heading_title">Password Generator</h1>
+    <div class="container">
+      
+        <form  id="myform" action="/form" method="POST" ">
+            <!-- length field -->
+            <!-- by default length would be 8 -->
+            <div class="form length">
+                <label for="length">Enter the Length</label>
+                <input type="number" name="length" id="length" min="3" max="100"  placeholder="Default is 8" >
+            </div>
+            <!-- numeric field-->
+            <div class="form numeric">
+                <label for="numric">Numeric</label>
+                <input type="checkbox" name="numeric" id="numeric_yes" > 
+                <!--  <label for="Yes">Yes</label>
+                <input type="radio" name="numeric" id="numeric_no" value="no" >   <label for="Yes">No</label> -->
+            </div>
+            <!-- special character -->
+
+            <div class="form special">
+                <label for="special">Special Character</label>
+                <input type="checkbox" name="special" id="special_yes">
+            </div>
+            
+            <!-- buuton to submit & reset -->
+            <div class="form options">
+                <button type="submit" id="submitBtn">Submit</button>
+                <button type="reset" id="resetBtn">Reset</button>
+            </div>
+            <!-- textbox to show the password  -->
+            <div id="Password_List">
+         
+            </div>
+        </form>
+     
+        
+    </div>
+</body>
+</html>
